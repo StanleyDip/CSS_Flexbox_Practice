@@ -11,30 +11,45 @@ body{
     line-height: 1.5;
 }
 section{
-    width: 30rem;
-    margin: 0 auto;
+    margin: auto;
+    width:50rem;
+    box-shadow: 2px 2px 30px 2px lightgray;
+    padding:4rem;
+    border-radius: 1rem;
 
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 2rem 0;
+    justify-content: center;
+}
 
-    background: #ff4949;
-    padding: 2rem 3rem;
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.price, .cart{
+    font-weight: bold;
     color: white;
-    border-radius: 1rem;
-}
-h2{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-p{
     font-size: 1.5rem;
-}
-span{
-    background-color: #541690;
-    color: white;
+    border-radius: 1rem;
     padding: 1rem 2rem;
-    border-radius: 2rem;
-
+    background-color: #0093ab;
+    text-decoration: none;
+}
+p:last-child{
+    align-self: flex-end;
+}
+.name{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.description{
+    font-size: 2rem;
+}
+.price{
     align-self: flex-start;
-    flex-shrink: 0;
+}
+.cart{
+    align-self:flex-end;
 }
